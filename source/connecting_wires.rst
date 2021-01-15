@@ -1,0 +1,15 @@
+connecting wires.
+=====================================
+
+.. image:: ./../imgs/connecting-wires.png
+
+必须使用这种线序与端子pin顺序一致的连接线！
+线与端子的相对位置应是固定的. ::
+
+    端子上下对折刚好重合
+
+.. tip:: rs485、can、电源连接线、swd下载线都是如此。
+.. warning:: uart比较特殊，自行调换tx rx即可。
+
+
+

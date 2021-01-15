@@ -37,3 +37,4 @@ JLinkLog.txt
 *.uvguix.*
 build/*
 !build/infantry.sct
+source/_build/*
