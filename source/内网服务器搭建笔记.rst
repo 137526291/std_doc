@@ -1,0 +1,88 @@
+
+======================
+基本配置
+======================
+
+==========  ================ ===========
+hw          model            ps
+==========  ================ ===========
+CPU         E5-2680v3        12C 24T LGA2011
+GPU         hd5450-256m      hdmi+vga
+board       huanan-x99-8md4  1 cpu socket
+RAM         micron-d4-2133   16Gx2
+SSD         PM981A 256G      server2016 + ubuntu18
+HDD         segeate Exos 8T       
+power       dk500w gold
+fan         ak120mini-133mm  single fan
+==========  ================ ===========
+
+
+======================
+系统安装
+======================
+- windows server 2016 standard
+- Ubuntu18.04-LTS
+
+``安装在SSD, grub引导``
+
+1. 格式化ssd GPT格式 
+#. win占前128G空间，留128G空闲给ubuntu
+#. 进bios改启动项 UEFI only
+#. rufus+server16.iso,NTFS,GPT+UEFI刻录server2016启动盘
+#. 安装windows server2016 第一个os完成.
+#. 刻录ubuntu18 desktop 启动光盘。
+#. 安装ubuntu18 桌面版作为服务器宿主机。
+
+
+如下表所示 宿主机里跑n个虚拟机
+
+==========  ================ ===========
+fs-vm1          git-vm2        cf-vm3
+虚拟机4          vm5               vm6
+==========  ================ ===========
+宿主机（host machine） tmz-svr
+========================================
+
+======================
+系统配置 ubuntu
+======================
+
+- 更换apt源为aliyun或者清华源
+.. 
+sudo apt update
+sudo apt upgrade
+
+- 配置静态ip
+    - netplan配置表
+- 查看HDD主存储硬盘fdisk -l  fdisk /dev/sda进入磁盘进行分区，新建卷，等操作
+::
+
+    fdisk -l  
+    fdisk /dev/sda
+
+- 完成后格式化一下
+::
+
+    mkfs.ext4 /dev/sda1
+
+- 挂载磁盘到某个目录
+
+::
+
+    sudo mkdir /kvm-storage
+    sudo mount /dev/sda1 /kvm-storage
+    sudo vi /etc/fstab  #添加自动挂载配置
+
+- 安装kvm虚拟机以及GUI管理软件
+
+::
+
+    sudo apt install qemu qemu-kvm libvirt-bin  bridge-utils  virt-manager
+    
+
+- 添加虚拟桥接网卡br0, ensxx, dhcp
+- 使用ubuntu20-server-xx.iso 
+
+
+
+

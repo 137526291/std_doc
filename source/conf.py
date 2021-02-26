@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'demo'
-copyright = '2021, langgo'
+project = 'ironmz-standard'
+copyright = '2021, ironmz corp'
 author = 'langgo'
 
 

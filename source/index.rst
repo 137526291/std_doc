@@ -15,6 +15,8 @@ Welcome to ironmz standard documentation!
    phase_current
    hall_state
    connecting_wires
+   classic_textbook
+   谕中原檄
 
 Indices and tables
 ==================
