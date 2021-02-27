@@ -3,20 +3,39 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. image:: ../imgs/ironmz-logo.png
+
 Welcome to ironmz standard documentation!
 ================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 基本规范
 
-   abstract
-   motor_dir
-   phase_current
-   hall_state
-   connecting_wires
-   classic_textbook
-   谕中原檄
+   abstract.rst
+   motor_dir.rst
+   phase_current.rst
+   hall_state.rst
+   connecting_wires.rst
+   网线接法.rst
+
+.. toctree::
+   :maxdepth: 0
+   :caption: 文艺复兴
+
+   出师表.rst
+   粗鄙之语.rst
+   谕中原檄.rst
+   隆中对.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: IT基础设施建设
+   :numbered:
+
+   introduction.rst
+   
+   
 
 Indices and tables
 ==================
