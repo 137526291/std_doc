@@ -48,9 +48,35 @@ fs-vm1          git-vm2        cf-vm3
 ======================
 
 - 更换apt源为aliyun或者清华源
-.. 
-sudo apt update
-sudo apt upgrade
+
+::
+
+    sudo cp /etc/apt/source.list /etc/apt/source.list.bak #备份源文件
+    sudo gedit /etc/apt/source.list
+
+更改为如下内容
+
+::
+
+    deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+
+    deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+
+    deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+
+    deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
+    deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+::
+
+    sudo apt update
+    sudo apt upgrade
 
 - 配置静态ip
     - netplan配置表
@@ -84,5 +110,17 @@ sudo apt upgrade
 - 使用ubuntu20-server-xx.iso 
 
 
+安装Ubuntu20 server到kvm后，启动，网络使用桥接设备br0
+更新apt。upgrade。之后安装snap国内镜像
 
+::
 
+    sudo snap install snap-store
+    
+
+完成后重启再执行
+
+::
+
+    sudo snap install nextcloud
+    sudo snap install snap-store-proxy  #如果下载速度慢 先装一下这个
