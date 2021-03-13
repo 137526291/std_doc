@@ -1,5 +1,5 @@
 
-内网服务器搭建
+内网服务器搭建简介
 ------------
 
 本网站分为四部分，主要内容介绍如下：
@@ -12,5 +12,5 @@
 
 
 如果您对该文档任何的建议和意见，
-欢迎在  `Github <https://github.com/dji-sdk/RoboMaster-SDK>`_ 
+欢迎在  `Github <https://github.com/>`
 上联系我们。

@@ -1,6 +1,10 @@
 .. _server-build:
 
-~~~~~~~~~~~~~~~~~~~~~
+============================
+服务器搭建笔记
+============================
+
+
 基本配置
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -17,8 +21,25 @@ power       dk500w gold
 fan         ak120mini-133mm  single fan
 ==========  ================ ===========
 
-
+服务器整体架构
 ~~~~~~~~~~~~~~~~~~~~~
+使用ubuntu18.04 LTS desktop作为宿主host，在host上运行者多个KVM虚拟机（guest os。）
+每个guest os一般运行某种服务。例如目前有4个guest os分别是
+
+.. 1. fs.tmz.com       nextcloud file-share
+.. #. cf.tmz.com:8090  confluence
+.. #. gitlab.tmz.com   gitlab
+.. #. samba.tmz.com    samba storage
+
+=============== ===============  ==================== =================
+guest name          os             service             url
+=============== ===============  ==================== =================
+tmz-fs          ubuntu20 server  nextcloud file share fs.tmz.com
+tmz-cf          ubuntu20 server  confluence           cf.tmz.com:8090
+tmz-gitlab      ubuntu20 server  gitlab               gitlab.tmz.com
+tmz-samba       ubuntu20 server  samba file share     samba.tmz.com
+=============== ===============  ==================== =================
+
 系统安装
 ~~~~~~~~~~~~~~~~~~~~~
 - windows server 2016 standard
@@ -44,7 +65,6 @@ fs-vm1          git-vm2        cf-vm3
 宿主机（host machine） tmz-svr
 ========================================
 
-~~~~~~~~~~~~~~~~~~~~~
 系统配置 ubuntu
 ~~~~~~~~~~~~~~~~~~~~~
 

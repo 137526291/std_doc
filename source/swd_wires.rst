@@ -1,7 +1,7 @@
-connecting wires.
+SWD调试下载连接线.
 =====================================
 
-.. image:: ./../imgs/connecting-wires.png
+.. image:: ./../imgs/swd-wires.png
 
 必须使用这种线序与端子pin顺序一致的连接线！
 线与端子的相对位置应是固定的. ::

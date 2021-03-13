@@ -13,10 +13,11 @@ Welcome to ironmz standard documentation!
    :caption: 基本规范
 
    abstract.rst
+   motor_wire.rst
    motor_dir.rst
    phase_current.rst
    hall_state.rst
-   connecting_wires.rst
+   swd_wires.rst
    网线接法.rst
 
 .. toctree::
@@ -34,6 +35,7 @@ Welcome to ironmz standard documentation!
    :numbered:
 
    introduction.rst
+   server_build.rst
    
    
 
