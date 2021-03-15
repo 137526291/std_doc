@@ -22,6 +22,12 @@ Welcome to ironmz standard documentation!
 
 .. toctree::
    :maxdepth: 0
+   :caption: wiki与教程
+
+   6step.rst
+
+.. toctree::
+   :maxdepth: 0
    :caption: 文艺复兴
 
    出师表.rst
