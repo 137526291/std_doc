@@ -9,7 +9,8 @@ swd座子可选2种
 
 - 选择micro USB座子 电源必须是5V
 
-.. image:: ./../imgs/swd-usb5.png
+.. image:: ./../imgs/swd-usb.png
+    :scale: 100%
 .. image:: ./../imgs/microusb-seq.png
     
 
