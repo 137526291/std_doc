@@ -19,12 +19,14 @@ Welcome to ironmz standard documentation!
    hall_state.rst
    swd_wires.rst
    网线接法.rst
+   foc_coordinate.rst
 
 .. toctree::
    :maxdepth: 0
    :caption: wiki与教程
 
    6step.rst
+   ea_theta.rst
 
 .. toctree::
    :maxdepth: 0
