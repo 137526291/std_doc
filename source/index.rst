@@ -27,6 +27,8 @@ Welcome to ironmz standard documentation!
 
    6step.rst
    ea_theta.rst
+   zephyr_tutorial.rst
+   git_tutorial.rst
 
 .. toctree::
    :maxdepth: 0

@@ -145,3 +145,27 @@ fs-vm1          git-vm2        cf-vm3
 
     sudo snap install nextcloud
     sudo snap install snap-store-proxy  #如果下载速度慢 先装一下这个
+
+
+
+
+samba网盘维护
+~~~~~~~~~~~~~~~~~~~~~
+
+首先 df -h 查看所有磁盘状态。
+某次服务器掉电发现主存盘600G不在，说明需要重新挂载
+fdisk -l 查看确定名字为/dev/sdb1
+往/etc/fstab末尾加入可以开机自动挂载硬盘。
+注意！添加完毕后用mount -a测试是否正确。否则系统可能启动不来
+
+::
+
+    sudo echo '/dev/sdb1 /home/langgo/samba_share ext4 defaults 0 0' >> /etc/fstab
+
+
+另外
+
+::
+
+    systemctl status samba.service     #可以查看samba状态
+    systemctl restart samba.service    #重启samba服务
