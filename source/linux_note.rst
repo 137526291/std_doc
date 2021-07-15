@@ -25,3 +25,36 @@ void my_sig_handler(int sig) {
 
 flag = fcntl(fd, F_GETFL);//获取之前的flag
 fcntl(fd, F_SETFL, flag | F_ASYNC);设置异步通知类似中断
+
+fork
+
+linux socket net  server
+--------------------------------
+1. sockServer = socket(xxx)
+#. bind
+#. listen
+#. accept
+#. send/recv
+
+
+linux socket net  client
+--------------------------------
+1. sockClient = socket(xxx)
+#. bind
+#. connect
+#. send/recv
+
+
+fork函数
+--------------------------------
+1. 主进程的fork会返回非0， 子进程的fork返回0
+2. fork用于复制一份，新开一个子进程并开始执行
+3. 可以用于支持服务器程序的多个tcp连接
+
+多线程 pthread
+--------------------------------
+1. 简单讲就是多线程只有1个main
+2. ./xx & 进入后台执行。 使用ps -T查看  PID和SPID就是进程号和线程号。
+3. 编译时需要链接 -lpthread
+4. 使用semaphore来同步线程，例如通知/等待通知 接收到key等等sem_t xx;
+5. 使用mutex来保护共享资源
