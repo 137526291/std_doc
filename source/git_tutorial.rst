@@ -16,8 +16,8 @@ git安装与注册gitee账号
 3. 配置本地git用户名和密码
     ::
 
-        git config --global user.name=tmz
-        git config --global user.email=tmz@ironmz.com
+        git config --global user.name tmz
+        git config --global user.email tmz@ironmz.com
 
 #. 生成ssh-key公钥以及添加到gitee服务器上 作为自己的凭证 命令行输入
     ::
