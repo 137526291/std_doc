@@ -2,7 +2,7 @@
 相电流正方向phase current dir.
 =====================================
 
-.. image:: ./../imgs/current-dir.png
+.. image:: imgs/standards/current-dir.png
 
 星形接法规定桥臂往电机星型中性点的电流为正电流，反之为负。
 

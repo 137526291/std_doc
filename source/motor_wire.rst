@@ -2,7 +2,7 @@
 电机接线标准 motor wires.
 =====================================
 
-.. image:: ./../imgs/motor-connect2.png
+.. image:: imgs/standards/motor-connect2.png
 
 需要统一标准的部分
 ------------------------------------
@@ -17,7 +17,7 @@
 
 电机相线（本体负责人）
 -------------------------------------
-.. image:: ./../imgs/motor-out.png
+.. image:: imgs/standards/motor-out.png
     :scale: 80%
 - 三根相线U、V、W （或称A、B、C）需要清晰标注！
 - 三根相线U、V、W （或称A、B、C）需要清晰标注！
@@ -31,7 +31,7 @@
 霍尔接口（本体负责人）
 -------------------------------------
 
-.. image:: ./../imgs/hall_con.png
+.. image:: imgs/standards/hall_con.png
 如图2所示，当接线头的卡扣在上面时，从左到右依次为C、B、A、GND、VCC。线序不能变,颜色不做强制要求。
 霍尔在软件里的状态值以C为MSB, A为LSB。
 若选用GH1.25mm座子，应为带锁型插座，且对应插头卡扣朝上。

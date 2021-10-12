@@ -5,7 +5,7 @@
 状态值以C为MSB ，A为LSB
 例如状态1 = 001 = HC0 HB0 HA1.
 
-.. image:: ./../imgs/hall_con.png
+.. image:: imgs/standards/hall_con.png
 如图2所示，当接线头的卡扣在上面时，从左到右依次为C、B、A、GND、VCC。线序不能变,颜色不做强制要求。
 霍尔在软件里的状态值以C为MSB, A为LSB。
 

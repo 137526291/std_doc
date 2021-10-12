@@ -5,7 +5,7 @@ foc各坐标轴的方向约定标准
 clarke变换
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../imgs/foc_clarke.png
+.. image:: imgs/standards/foc_clarke.png
 
 .. todo add math equation
 
@@ -13,10 +13,10 @@ clarke变换
 park变换
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../imgs/foc_park.png
+.. image:: imgs/standards/foc_park.png
 
 
 svpwm基本矢量
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../imgs/foc_svpwm.png
+.. image:: imgs/standards/foc_svpwm.png

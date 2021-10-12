@@ -2,7 +2,7 @@
 电机旋转方向motor dir.
 ===========================
 
-.. image:: ./../imgs/motor-dir-define.png
+.. image:: imgs/standards/motor-dir-define.png
 
 沿着电机底部往出轴方向看，顺时针CW为正方向
 

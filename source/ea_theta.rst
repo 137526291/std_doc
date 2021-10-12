@@ -10,7 +10,7 @@
 
 - 当加在线圈上的空间矢量电压(下称V1）与三相定子坐标系A 重合时， 如图即
   
-.. image:: ../imgs/ea_theta/align_vector.png
+.. image:: imgs/ea_theta/align_vector.png
 
 假设此时在定子绕组上生成的电磁铁的磁场水平向右 N极向右， 
 则转子（可以看作是永磁铁）会被吸引至水平方向。相当于两个磁铁中心对称。
@@ -20,8 +20,8 @@
 - 因为反电动势=磁通量的变化率 即ea = dΦa/dt = Φp*ω*sin(ωt）
 - 所以当线圈做匀速运动时，反电动势是θ的正弦函数。
   
-.. image:: ../imgs/ea_theta/adi_fi_ea.png
-.. image:: ../imgs/ea_theta/adi_fi_ea1.png
+.. image:: imgs/ea_theta/adi_fi_ea.png
+.. image:: imgs/ea_theta/adi_fi_ea1.png
 
 **结论：电角度为0时 对应a相反电动势过0点，ea呈正弦变化。**
 
@@ -39,11 +39,11 @@
 步骤0 实验环境
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../imgs/ea_theta/motor_magsensor.jpg
+.. figure:: imgs/ea_theta/motor_magsensor.jpg
 
     电机出轴粘了一个单极永磁铁
 
-.. figure:: ../imgs/ea_theta/neutral.jpg
+.. figure:: imgs/ea_theta/neutral.jpg
 
     电机三相线通过3个30k电阻接出一个中心点N，探头夹U与N
 
@@ -63,11 +63,11 @@
 电机三相线与中点N通过电阻引出，测量a相反电势ea
 通过MCU的DAC外设将磁编角度输出为电压波形方便示波器观察
 
-.. figure:: ../imgs/ea_theta/eacw.png
+.. figure:: imgs/ea_theta/eacw.png
 
-.. figure:: ../imgs/ea_theta/eaccw.png
+.. figure:: imgs/ea_theta/eaccw.png
 
-.. figure:: ../imgs/ea_theta/eaccw1.png
+.. figure:: imgs/ea_theta/eaccw1.png
 
 可以看到theta从0~2pi变化时 θ=0对应反电动势过0点。
 

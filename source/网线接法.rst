@@ -6,6 +6,6 @@
 面朝水晶头金属触点那面, 
 从左到右依次为pin 1~8
 
-.. image:: ../imgs/t568b.png
+.. image:: imgs/standards/t568b.png
 
 

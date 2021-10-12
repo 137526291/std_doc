@@ -39,20 +39,23 @@ gcc-arm作为交叉编译器
 -------------------------
 下载安装vscode.  安装扩展c/c++(microsoft)   cortex-debug （已放在网盘（Y:\公用工程软件\）
 
-.. image:: ./../imgs/gcc/11.png
+.. image:: imgs/gcc/11.png
+    :scale: 100%
 
 安装gcc-arm
 -------------------------
 #. 安装gcc-arm-none-eabi-win32.exe（已放在网盘（Y:\公用工程软件\）
 安装路径选择 X:\gnu_arm_embedded 并且添加X:\gnu_arm_embedded\bin到系统变量path（如果有选项勾选添加到环境变量就不需要这一步）
 
-.. image:: ./../imgs/gcc/env-gcc.png
+.. image:: imgs/gcc/env-gcc.png
+    :scale: 100%
 
 安装choco 与 make
 ------------------------
 开始-输入powershell 管理员开powershell 复制以下  回车。
 
-.. image:: ./../imgs/gcc/ps.png
+.. image:: imgs/gcc/ps.png
+    :scale: 100%
 
 ::
 
@@ -68,12 +71,15 @@ gcc-arm作为交叉编译器
 
 
 
-.. image:: ./../imgs/gcc/chocoall2.png
+.. image:: imgs/gcc/chocoall2.png
+    :scale: 100%
 
 安装jlink与添加环境变量
 ------------------------
-.. image:: ./../imgs/gcc/env.png
-.. image:: ./../imgs/gcc/env2.png
-.. image:: ./../imgs/gcc/env-jlink.png
+.. image:: imgs/gcc/env.png
+    :scale: 100%
+.. image:: imgs/gcc/env2.png
+    :scale: 100%
+.. image:: imgs/gcc/env-jlink.png
 
 打开命令行 输入jlink回车 没报错说明安装ok

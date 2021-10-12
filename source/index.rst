@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: ../imgs/ironmz-logo.png
+.. image:: imgs/ironmz-logo.png
 
 Welcome to ironmz standard documentation!
 ================================
@@ -31,6 +31,9 @@ Welcome to ironmz standard documentation!
    git_tutorial.rst
    fdcan.rst
    gcc_arm.rst
+   makestm32.rst
+   cmake.rst
+   vscode.rst
 
 .. toctree::
    :maxdepth: 0

@@ -2,6 +2,42 @@
 git tutorial
 ============================
 
+gitee.com是国内速度非常快的一个代码托管平台，5人以内仓库免费
+仓库可以自由设置共有私有与权限，方便中小型公司使用。
+
+git安装与注册gitee账号
+------------------------
+1. 先在gitee上注册账号。记住用户名如tmz 邮箱如tmz@ironmz.com
+2. 使用choco安装git或者去下载客户端安装都可以   
+    ::
+    
+        choco install git
+
+3. 配置本地git用户名和密码
+    ::
+
+        git config --global user.name=tmz
+        git config --global user.email=tmz@ironmz.com
+
+#. 生成ssh-key公钥以及添加到gitee服务器上 作为自己的凭证 命令行输入
+    ::
+
+        ssh-keygen  #一路回车直到生成指纹
+    
+#. 将公钥文件内容复制到剪贴板 到gitee网站 点击自己头像 添加ssh-确定
+    ::
+
+        clip < ~/.ssh/id_rsa.pub    
+
+    .. image:: imgs/git/gitee-ssh.png
+        :scale: 100%
+
+
+#. 有sshkey之后，如果你在某个代码仓库有权限，则可以从网站拉取代码到本机了例如
+    ::
+
+        git clone git@gitee.com:langgoc/zephyr.git
+
 
 git的可视化学习
 你对 Git 感兴趣吗？那么算是来对地方了！ “Learning Git Branching” 可以说是目前为止最好的教程了，在沙盒里你能执行相应的命令，还能看到每个命令的执行情况； 通过一系列刺激的关卡挑战，逐步深入的学习 Git 的强大功能，在这个过程中你可能还会发现一些有意思的事情。
