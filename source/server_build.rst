@@ -99,6 +99,19 @@ fs-vm1          git-vm2        cf-vm3
     sudo apt update
     sudo apt upgrade
 
+如果存在
+``GPG error``
+::
+    GPG error: http://mirrors.aliyun.com/ubuntu bionic InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 3B4FE6ACC0B21F32
+    E: The repository 'http://mirrors.aliyun.com/ubuntu bionic InRelease' is not signed. NO_PUBKEY 3B4FE6ACC0B21F32
+
+使用以下命令 替换成自己报错时的PUBKEY
+::
+    
+    gpg --keyserver pgpkeys.mit.edu --recv-key 3B4FE6ACC0B21F32   
+    gpg -a --export 1C1E55A728CBC482 | sudo apt-key add -
+
+
 - 配置静态ip
     - netplan配置表
 - 查看HDD主存储硬盘fdisk -l  fdisk /dev/sda进入磁盘进行分区，新建卷，等操作
