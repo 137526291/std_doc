@@ -4,6 +4,7 @@
    contain the root `toctree` directive.
 
 .. image:: imgs/ironmz-logo.png
+.. image:: imgs/ddt-logo2.png
 
 Welcome to ironmz standard documentation!
 ================================
